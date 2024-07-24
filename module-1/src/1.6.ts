@@ -19,3 +19,7 @@ addBalance(balance: number ): string {
     return `My new Balance is ${this.balance + balance}`
 }
 }
+
+
+let total: number[] = [1, 2, 3];
+let newTotal = total.map((element:number): number => element*element);
