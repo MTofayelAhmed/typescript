@@ -12,7 +12,7 @@
 
 
 
-  const {id, Phone, Name:{MiddleName} }= user
+  const {id, Phone, Name:{MiddleName} } = user
 
 
 //   array Destructuring 
