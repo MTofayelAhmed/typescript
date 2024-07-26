@@ -5,19 +5,25 @@ type User1 = {
     age: number,
 }
 
-
-type USerWithRole = User1 & {role: string}
-
-
-
 interface User2 {
     name: string, 
     age : number,
 }
 
+interface USerWithRole1 extends User2{
+    role: string
+
+}
 
 
-const user1: USerWithRole = {
+type USerWithRole = User1 & {role: string}
+
+
+
+
+
+
+const user1: USerWithRole1 = {
     name: "John",
     age: 100, 
     role: "admin"
