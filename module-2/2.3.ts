@@ -28,8 +28,11 @@ type GenericTuple<X, Y >= [X, Y]
 
 const manush : GenericTuple<string, string> = ["Mr. X", "Mr. Y"]
 
+type USer = {name: string, age: string}
 
-const user3 : GenericTuple<number, {name: string, age: string}>= [123, {name: "John", age: "28"}]
+
+
+const user3 : GenericTuple<number, USer >= [123, {name: "John", age: "28"}]
 
 
 
