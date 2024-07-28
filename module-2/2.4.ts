@@ -1,7 +1,7 @@
 {
   // interface Generic
 
-  interface Developer<T, W> {
+  interface Developer<T, W=null> {
     name: string;
     computer: {
       brand: string;
@@ -18,7 +18,7 @@
     display: string;
   }
 
-  const poorDeveloper: Developer<Watch, null> = {
+  const poorDeveloper: Developer<Watch> = {
     name: "Persian Bhai",
     computer: {
       brand: "DEll",
