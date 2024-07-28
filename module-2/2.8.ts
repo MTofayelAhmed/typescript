@@ -1,6 +1,13 @@
 {
 
 
+const getToDoData = async()=> {
+const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+const data = await response.json()
+return data 
+}
+
+
 const createPromise = ()=> {
     return new Promise((resolve, reject)=> {
         const data: string = "something"
@@ -14,10 +21,14 @@ const createPromise = ()=> {
     
 }
 
+// calling create promise Function
+
+const showData = async()=> {
+    const data = await createPromise()
+}
 
 
-
-
+showData()
 
 
 
