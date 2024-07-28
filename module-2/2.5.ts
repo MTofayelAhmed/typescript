@@ -29,6 +29,31 @@ type User1 = {id: number, name: string}
 
 const restTuple = createGenericWithTuple<string,User1 >("Bangladesh", {id: 222, name: "Tofayel"})
 
+const AddCourseToStudent =<T> (student: T)=> {
+    const course = "Next Level Web Development"
+    return {
+        ...student,
+        course
+    }
+}
+type USerS={
+    name: string, 
+    id: number,
+    email: string
+}
+const courseStudent1 = AddCourseToStudent<USerS>({name: "Tofayel Ahmed", id:2222, email: "X@gmail.com"})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
