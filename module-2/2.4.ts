@@ -1,7 +1,7 @@
 {
   // interface Generic
 
-  interface Developer<T> {
+  interface Developer<T, W> {
     name: string;
     computer: {
       brand: string;
@@ -9,6 +9,7 @@
       releaseYear: number;
     };
     smartWatch: T;
+    bike?: W;
   }
 
   interface Watch {
@@ -17,7 +18,7 @@
     display: string;
   }
 
-  const poorDeveloper: Developer<Watch> = {
+  const poorDeveloper: Developer<Watch, null> = {
     name: "Persian Bhai",
     computer: {
       brand: "DEll",
@@ -39,7 +40,12 @@
       heartTrack: boolean
   }
 
-  const SmartDeveloper: Developer<AppleWatch> = {
+  interface Bike {
+    model: string,
+    engine: string
+  }
+
+  const SmartDeveloper: Developer<AppleWatch, Bike> = {
     name: " Bhai",
     computer: {
       brand: "Apple",
@@ -53,6 +59,10 @@
       sleepTrack: true,
       heartTrack: true
     },
+    bike: {
+        model: "Yahoo",
+        engine: "100cc"
+    }
   };
 
 
