@@ -27,14 +27,22 @@ type PersonPartial = Partial<Person>
 
 type PersonReadOnly = Readonly<Person>
 
-const personInfo: PersonReadOnly = {
+const personInfo : PersonReadOnly = {
     name: "Mr. X",
     age: 39,
     email: "stahmed@gmail.com",
     contact: "017"
 }
 
+// Record Utility 
 
+type MyRecord = Record<string, unknown>
+
+const myObject : MyRecord = {
+    name: "Mx X",
+    age: 39
+
+}
 
 
 
