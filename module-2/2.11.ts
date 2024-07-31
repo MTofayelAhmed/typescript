@@ -10,7 +10,9 @@ type Person = {
 }
 type Name = Pick<Person, "name" | "age">
 
+// Omit type
 
+type ContactInfo = Omit <Person, "name"| "age">
 
 
 
