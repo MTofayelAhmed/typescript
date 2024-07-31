@@ -16,7 +16,8 @@ type ContactInfo = Omit <Person, "name"| "age">
 
 
 
-
+// required utility 
+type PersonRequired = Required<Person>
 
 
 
