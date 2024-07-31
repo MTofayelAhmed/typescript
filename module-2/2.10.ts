@@ -13,6 +13,9 @@ type Area = {
     width: number;
 }
 
+type AreaString = {
+    [key in keyof Area]: string;
+}
 
 
 }
